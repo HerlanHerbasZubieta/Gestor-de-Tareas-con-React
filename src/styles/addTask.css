@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-image: url('../assets/imagen.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+  
+}
+
+.todo-list {
+  text-align: center;
+  padding: 20px;
+}
+.encb-1 {
+  font-size: 40px;
+}
+
+.task-input {
+  margin: 20px auto;
+  width: 700px;
+  text-align: center;
+}
+
+.encb-2{
+  font-size: 30px;
+}
+
+.task-input input {
+  padding: 10px;
+  margin: 0 10px; 
+  width: 70%;
+  max-width: 500px; 
+  border-radius: 12px;
+}
+
+.task-input button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.container-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b4d7e8;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  height: 60px;
+}
+
+.container-task p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.container-task button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 50px;
+}
+
+.container-task.completed {
+  background-color: #6def89; 
+}
+
+.container-task.completed p {
+  text-decoration: line-through;
+}
+
+.container-task.completed button.complete {
+  background-color: #079227; 
+  color: #fff;
+}
+
+.empty-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e77f10;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+/* Diseño responsivo */
+@media screen and (max-width: 768px) {
+  .task-input {
+    width: 100%;
+  }
+
+  .task-input input {
+    width: 100%;
+    max-width: none; 
+    margin: 13px 0; 
+  }
+  .task-input button {
+    width: 100%; 
+    margin: 0 10px;
+  }
+
+  .container-task {
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+  }
+
+  .container-task p {
+    text-align: center;
+  }
+
+  .container-task button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .empty-message {
+    font-size: 14px;
+  }
+
+}
